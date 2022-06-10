@@ -34,7 +34,7 @@
          //返回reactive 或 readonly代理的原始对象
          let foo = {};
          let reactiveFoo = reactive(foo);
-         console.log(toRaw(reactiveFoo) === foo);
+         console.log(reactiveFoo);
 
          return {
             onEnlargeText,

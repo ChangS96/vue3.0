@@ -9,6 +9,8 @@
       <router-link to="/dialog">弹框dialog</router-link>
       |
       <router-link to="/basic">基组</router-link>
+      |
+      <router-link to="/index">样式页</router-link>
    </div>
    <router-view></router-view>
 </template>

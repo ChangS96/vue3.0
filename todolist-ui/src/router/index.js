@@ -34,6 +34,11 @@ const routes = [
     path:'/basic',
     name:'basic',
     component:()=>import ('../views/basic.vue')
+  },
+  {
+    path:'/index',
+    name:'Index',
+    component:()=>import ('../views/index.vue')
   }
 ];
 
