@@ -39,6 +39,11 @@ const routes = [
     path:'/index',
     name:'Index',
     component:()=>import ('../views/index.vue')
+  },
+  {
+    path:'/pageone',
+    name:'Pageone',
+    component:()=>import ('../views/page/pageone.vue')
   }
 ];
 

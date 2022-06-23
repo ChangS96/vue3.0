@@ -11,6 +11,8 @@
       <router-link to="/basic">基组</router-link>
       |
       <router-link to="/index">样式页</router-link>
+      <hr style="width:60%;border:1px solid yellowgreen">
+      <router-link to="/pageone">组件</router-link>
    </div>
    <router-view></router-view>
 </template>
