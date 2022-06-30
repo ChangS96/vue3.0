@@ -1,17 +1,29 @@
 <template>
   <div id="container">
     <img src="@/assets/b.jpg" alt="">
-    <el-image v-bind="$attrs" v-on="$listeners"> 
-        <div slot="error" class="image-slot">
+    <el-image v-bind="$attrs"> 
+        <div class="image-slot">
             <img src="@/assets/a.jpg" alt="图片加载失败.png">
         </div>
-        <div slot="placeholder" class="placeholder-slot">加载中。。。</div>
+        <div class="placeholder-slot">加载中。。。</div>
     </el-image>
   </div>
 </template>
 
-<script setup>
-  
+<script>
+    import {defineComponent,ref} from 'vue'
+
+    export default defineComponent({
+        setup(){
+            const count = ref('2')
+            console.log($attrs)
+            return{
+                count
+            }
+        },
+        components:{
+        }
+    })
 </script>
 
 <style scoped>
